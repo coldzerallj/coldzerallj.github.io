@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS</title>
+</head>
+<body>
+  <!-- Math数学计算 -->
+  <script>
+    // 最大值
+    Math.max();
+    // 最小值
+    Math.min();
+    // 向上取整
+    Math.ceil();
+    // 向下取整
+    Math.floor();
+    // 取随机数
+    // 0-1 >=0 <1 !=1
+    Math.random();
+    // 例子: 0~5随机数
+    // 取随机数公式 MATH.floor(Math.random()*max+1)
+    Math.floor(Math.random()*(5+1));
+    // 例子 2-5随机数
+    // 去随机书区间公式 Math.floor(Math.random()*max-min+1)+min
+    2+Math.floor(Math.random()*(5-2+1))
+
+    // 随机点名操作
+    const students = ['随机1号','随机2号','随机3号','随机4号','随机5号'];
+    const index =  Math.floor(Math.random()*students.length);
+    console.log(students[index]);
+  </script>
+  <!-- 日期时间戳 -->
+  <script>
+    // new 对象构建 得到当前时间 对象类型
+    const date = new Date();
+    console.log(date,typeof date);//Object
+    console.log(date*1)// 对象可以数学运算转成毫秒数
+
+    // Date方法获取时间 string类型 
+    const hd = Date();
+    console.log(hd,typeof hd);//string类型
+    
+    // 直接获取时间戳
+    const date3 = Date.now();
+
+    // 获取程序运算时间
+    // 1 毫秒数获取
+      const datestr = Date.now();
+      for(i=0;i<10000000;i++){}
+      const dateend = Date.now();
+      console.log((dateend-datestr)+'ms',(dateend-datestr)/1000+'秒');
+    // 2 console.time('name'); console.timeEnd('name') 时间标志位
+      console.time("for");
+      for(i=0;i<10000000;i++){}
+      console.timeEnd("for")
+
+      // 时间戳转换
+      const datems = Date.now();
+      console.log(new Date(datems));
+  </script>
+  <!-- 封装日期格式化函数 -->
+  <script>
+    {
+      const date = new Date();
+      function dateFormat(date,format = 'YYYY-MM-DD HH:MM:SS'){
+        const config = {
+          YYYY:date.getFullYear(),
+          MM:date.getMonth()+1,
+          DD:date.getDate(),
+          HH:date.getHours(),
+          MM:date.getMinutes(),
+          SS:date.getSeconds(),
+        }
+        for(const key in config){
+          format = format.replace(key,config[key]);
+        }
+        return format
+      }
+      console.log(dateFormat(date,'YYYY-MM月DD日'));
+    }
+    // js时间库 momentjs
+  </script>
+</body>
+</html>
