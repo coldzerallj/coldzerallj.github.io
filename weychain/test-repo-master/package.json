@@ -1,0 +1,135 @@
+{
+	"version": "1.0.0",
+	"license": "ISC",
+	"description": "Project",
+	"author": "weychain fed",
+	"private": true,
+	"scripts": {
+		"start": "cross-env ENV=local node build/npm-script-config.js",
+		"build:dev": "cross-env ENV=dev node build/build.js",
+		"build:sit": "cross-env ENV=sit node build/build.js",
+		"build:uat": "cross-env ENV=uat node build/build.js",
+		"build:stage": "cross-env ENV=stage node build/build.js",
+		"build:prod": "cross-env ENV=prod node build/build.js",
+		"changelog": "conventional-changelog -p vue -i CHANGELOG.md -s",
+		"svg": "svg-sprite --symbol --dest=static --symbol-dest=icon --symbol-sprite=symbol.svg src/svg/*.svg",
+		"test": "jest"
+	},
+	"jest": {
+		"moduleFileExtensions": [
+			"js",
+			"json",
+			"vue"
+		],
+		"transform": {
+			".*\\.(vue)$": "vue-jest",
+			"^.+\\.js$": "<rootDir>/node_modules/babel-jest"
+		},
+		"moduleNameMapper": {
+			"^@/(.*)$": "<rootDir>/src/$1"
+		}
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged",
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
+	},
+	"lint-staged": {
+		"{src,build,config}/**/*.{js,json,vue}": [
+			"eslint --fix",
+			"git add"
+		],
+		"src/style/**/*.scss": [
+			"prettier --write",
+			"git add"
+		]
+	},
+	"dependencies": {
+		"@babel/runtime": "^7.9.2",
+		"@babel/runtime-corejs3": "^7.9.2",
+		"axios": "^0.19.2",
+		"core-js": "^3.6.4",
+		"element-ui": "^2.13.0",
+		"es6-promise": "^4.1.1",
+		"husky": "^4.2.3",
+		"js-cookie": "^2.2.1",
+		"nprogress": "^0.2.0",
+		"vue": "^2.3.3",
+		"vue-i18n": "^8.3.1",
+		"vue-router": "^2.6.0",
+		"vuex": "^2.3.1"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.0.0",
+		"@babel/plugin-transform-runtime": "^7.9.0",
+		"@babel/preset-env": "^7.9.5",
+		"@babel/register": "^7.9.0",
+		"@commitlint/cli": "^8.3.5",
+		"@commitlint/config-conventional": "^8.3.4",
+		"autoprefixer": "^7.1.2",
+		"babel-eslint": "^8.2.3",
+		"babel-jest": "^25.2.6",
+		"babel-loader": "^8.0.0",
+		"babel-preset-mobx": "^2.0.0",
+		"chalk": "^2.0.1",
+		"connect-history-api-fallback": "^1.3.0",
+		"conventional-changelog-cli": "^2.0.31",
+		"cookie-parser": "^1.4.3",
+		"cookie-session": "^1.3.0",
+		"copy-webpack-plugin": "^5.1.1",
+		"cross-env": "^5.0.5",
+		"css-loader": "^3.5.2",
+		"cssnano": "^4.1.10",
+		"eslint": "^4.19.1",
+		"eslint-config-prettier": "^2.9.0",
+		"eslint-plugin-prettier": "^2.6.0",
+		"eslint-plugin-vue": "^4.5.0",
+		"eventsource-polyfill": "^0.9.6",
+		"express": "^4.14.1",
+		"express-router": "0.0.1",
+		"extract-text-webpack-plugin": "^2.0.0",
+		"file-loader": "^0.11.1",
+		"friendly-errors-webpack-plugin": "^1.1.3",
+		"html-webpack-plugin": "^2.28.0",
+		"http-proxy-middleware": "^1.0.3",
+		"inquirer": "^6.0.0",
+		"jest": "^25.2.7",
+		"lint-staged": "^7.1.2",
+		"mkdirp": "^0.5.1",
+		"mockjs": "^1.0.1-beta3",
+		"node-sass": "^4.5.3",
+		"nodemon": "^1.11.0",
+		"opn": "^5.1.0",
+		"optimize-css-assets-webpack-plugin": "^2.0.0",
+		"ora": "^1.2.0",
+		"prettier": "^1.13.2",
+		"regenerator-runtime": "^0.13.5",
+		"rimraf": "^2.6.0",
+		"sass": "^1.0.0-beta.2",
+		"sass-loader": "^6.0.6",
+		"semver": "^5.3.0",
+		"shelljs": "^0.7.6",
+		"svg-sprite": "^1.5.0",
+		"swagger-parser-mock": "^1.1.1",
+		"url-loader": "^4.1.0",
+		"vue-jest": "^3.0.5",
+		"vue-loader": "^12.1.0",
+		"vue-style-loader": "^3.0.1",
+		"vue-template-compiler": "^2.3.3",
+		"webpack": "^2.6.1",
+		"webpack-bundle-analyzer": "^3.7.0",
+		"webpack-dev-middleware": "^1.10.0",
+		"webpack-hot-middleware": "^2.18.0",
+		"webpack-merge": "^4.1.0"
+	},
+	"engines": {
+		"node": ">= 4.0.0",
+		"npm": ">= 3.0.0"
+	},
+	"browserslist": [
+		"> 0.25%",
+		"last 2 versions",
+		"not ie <= 8"
+	]
+}

@@ -1,0 +1,32 @@
+// gird system by Ray
+// toDo: 响应式处理
+// toDo: 边界处理
+
+$gap: 10rpx;
+$gridSize: 24;
+
+
+.grid-row {
+	// margin-left: -$gap;
+	// margin-right: -$gap;
+
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+
+[class*='grid-col-'] {
+  float: left;
+  // padding-left: $gap;
+  // padding-right: $gap;
+  width: 100%;
+  min-height: 1px;
+}
+
+@for $i from 1 through $gridSize {
+  .grid-col-#{$i} {
+    width: ($i / $gridSize) * 100%;
+  }
+}

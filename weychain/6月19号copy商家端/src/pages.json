@@ -1,0 +1,294 @@
+{
+	"pages": [
+		{
+			"path": "pages/sale-report/index",
+			"style": {
+				"navigationBarTitleText": "销售报表"
+			}
+		},
+		{
+			"path": "pages/user/new-login/index",
+			"style": {
+				"navigationBarTitleText": "绑定手机号"
+			}
+		},
+		{
+			"path": "pages/user/register/index",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/user/find-password/index",
+			"style": {
+				"navigationBarTitleText": "找回密码"
+			}
+		},
+		{
+			"path": "pages/order/index",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"enablePullDownRefresh": true,
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/order/search/index",
+			"style": {
+				"navigationBarTitleText": "订单",
+				"enablePullDownRefresh": true,
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/order/detail/index",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"navigationBarBackgroundColor": "#ff4771",
+				"navigationBarTextStyle": "white",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/order/logistics/index",
+			"style": {
+				"navigationBarTitleText": "订单跟踪"
+			}
+		},
+		{
+			"path": "pages/user/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/user/identity-confirm/index",
+			"style": {
+				"navigationBarTitleText": "身份验证"
+			}
+		},
+		{
+			"path": "pages/user/info-modify/index",
+			"style": {
+				"navigationBarTitleText": "修改个人信息"
+			}
+		},
+		{
+			"path": "pages/user/setting/index",
+			"style": {
+				"navigationBarTitleText": "安全设置"
+			}
+		},
+		{
+			"path": "pages/user/password-modify/index",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+		},
+		{
+			"path": "pages/user/phone-modify/index",
+			"style": {
+				"navigationBarTitleText": "绑定手机号"
+			}
+		},
+		{
+			"path": "pages/user/message/index",
+			"style": {
+				"navigationBarTitleText": "消息中心"
+			}
+		},
+		{
+			"path": "pages/user/my-shop/index",
+			"style": {
+				"navigationBarTitleText": "我的店铺"
+			}
+		},
+		{
+			"path": "pages/user/fund-account/index",
+			"style": {
+				"navigationBarTitleText": "资金账户"
+			}
+		},
+		{
+			"path": "pages/user/withdrawal/index",
+			"style": {
+				"navigationBarTitleText": "提现"
+			}
+		},
+		{
+			"path": "pages/user/withdrawal-number/index",
+			"style": {
+				"navigationBarTitleText": "提现单号"
+			}
+		},
+		{
+			"path": "pages/user/account-details/index",
+			"style": {
+				"navigationBarTitleText": "结算账户详情"
+			}
+		},
+		{
+			"path": "pages/user/change-account/index",
+			"style": {
+				"navigationBarTitleText": "结算账户改绑"
+			}
+		},
+		{
+			"path": "pages/user/business-details/index",
+			"style": {
+				"navigationBarTitleText": "交易详情"
+			}
+		},
+		{
+			"path": "pages/user/transaction-details/index",
+			"style": {
+				"navigationBarTitleText": "交易明细"
+			}
+		},
+		{
+			"path": "pages/user/business-time/index",
+			"style": {
+				"navigationBarTitleText": "编辑营业时间"
+			}
+		},
+		{
+			"path": "pages/user/protocol/index",
+			"style": {
+				"navigationBarTitleText": "入驻协议"
+			}
+		},
+
+		{
+			"path": "pages/product-manage/index",
+			"style": {
+				"navigationBarTitleText": "销售管理"
+			}
+		},
+		{
+			"path": "pages/product-manage/category/index",
+			"style": {
+				"navigationBarTitleText": "商品分类管理"
+			}
+		},
+		{
+			"path": "pages/product-manage/add/index",
+			"style": {
+				"navigationBarTitleText": "新增商品"
+			}
+		},
+		{
+			"path": "pages/user/apply-residence/index",
+			"style": {
+				"navigationBarTitleText": "申请入驻"
+			}
+		},
+		{
+			"path": "pages/user/apply-residence/search/index",
+			"style": {
+				"navigationBarTitleText": "铺位号搜索"
+			}
+		},
+		{
+			"path": "pages/user/apply-residence/confirm-detail/index",
+			"style": {
+				"navigationBarTitleText": "入驻资料"
+			}
+		},
+		{
+			"path": "pages/user/apply-residence/operator-information/index",
+			"style": {
+				"navigationBarTitleText": "申请入驻"
+			}
+		},
+		{
+			"path": "pages/user/freight-rules/index",
+			"style": {
+				"navigationBarTitleText": "运费管理"
+			}
+		},
+		{
+			"path": "pages/user/freight-rules/add/index",
+			"style": {
+				"navigationBarTitleText": "运费规则"
+			}
+		},
+		{
+			"path": "pages/user/property-payment/index",
+			"style": {
+				"navigationBarTitleText": "物业缴费"
+			}
+		},
+		{
+			"path": "pages/user/pay-success/index",
+			"style": {
+				"navigationBarTitleText": "支付成功"
+			}
+		},
+		{
+			"path": "pages/user/property-payment/all/index",
+			"style": {
+				"navigationBarTitleText": "全部账单"
+			}
+		},
+		{
+			"path": "pages/user/property-payment/info-detail/index",
+			"style": {
+				"navigationBarTitleText": "费用明细"
+			}
+		},
+		{
+			"path": "pages/user/property-payment/detail/index",
+			"style": {
+				"navigationBarTitleText": "账单明细"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#F5F7FA"
+	},
+	"tabBar": {
+		"color": "#616B80",
+		"selectedColor": "#ff4771",
+		"borderStyle": "black",
+		"backgroundColor": "#fff",
+		"list": [
+			{
+				"pagePath": "pages/sale-report/index",
+				"iconPath": "static/img/iconfont-home.png",
+				"selectedIconPath": "static/img/iconfont-home-active.png",
+				"text": "销售报表"
+			},
+			{
+				"pagePath": "pages/order/index",
+				"iconPath": "static/img/iconfont-cart.png",
+				"selectedIconPath": "static/img/iconfont-cart-active.png",
+				"text": "订单管理"
+			},
+			{
+				"pagePath": "pages/product-manage/index",
+				"iconPath": "static/img/iconfont-order.png",
+				"selectedIconPath": "static/img/iconfont-order-active.png",
+				"text": "销售管理"
+			},
+			{
+				"pagePath": "pages/user/index",
+				"iconPath": "static/img/iconfont-user.png",
+				"selectedIconPath": "static/img/iconfont-user-active.png",
+				"text": "我的"
+			}
+		]
+	},
+	"condition": {
+		"current": 0,
+		"list": [
+			{
+				"name": "",
+				"path": "",
+				"query": ""
+			}
+		]
+	}
+}

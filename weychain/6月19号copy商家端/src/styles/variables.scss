@@ -1,0 +1,102 @@
+/* 项目通用变量 */
+
+/* 行为相关颜色 */
+$uni-color-main: #FF4771; //主颜色
+$ds-main-color: $uni-color-main; //主颜色
+$uni-color-primary: #007aff;
+$uni-color-secondry: #F0F2F5;
+$uni-color-success: #12CB8E;
+$uni-color-warning: #ffb41f;
+$uni-color-error: #dd524d;
+
+/* 文字基本颜色 */
+$uni-text-color: #141f33; //基本色
+$uni-text-color-black: #252525; //辅助黑色
+$uni-text-color-white: #fff; //反色
+$uni-text-color-grey: #616b80; //辅助灰色，如加载更多的提示信息
+$uni-text-color-placeholder: #c9ced6;
+$uni-text-color-disable: #c9ced6;
+$uni-text-price: #ff5a47; //价格颜色
+$uni-text-count: $uni-color-success; //商品数量颜色
+$uni-text-ordermsg: #99a0ad; //订单灰色文字
+
+/* 背景颜色 */
+$uni-bg-color: #fff;
+$uni-bg-color-grey: #f5f5f5;
+$uni-bg-color-othergrey: #F5F7FA;
+$uni-bg-color-hover: #f1f1f1; //点击状态颜色
+$app-page-bg-color-primary: #F5F7FA;
+
+/* 边框颜色 */
+$uni-border-color: #ebeef5;
+$uni-border-color-grey: #eee;
+/* 尺寸变量 */
+
+/* 文字尺寸 */
+$uni-font-size-sm: 24rpx;
+$uni-font-size-base: 28rpx;
+$uni-font-size-lg: 32rpx;
+
+
+/* 图片尺寸 */
+$uni-img-size-sm: 40rpx;
+$uni-img-size-base: 52rpx;
+$uni-img-size-lg: 80rpx;
+
+/* Border Radius */
+$uni-border-radius-sm: 4rpx;
+$uni-border-radius-base: 6rpx;
+$uni-border-radius-lg: 12rpx;
+$uni-border-radius-lg60: 60rpx;
+$uni-border-radius-circle: 50%;
+
+/* 间距 */
+$uni-spacing-sm: 12rpx;
+$uni-spacing-base: 24rpx;
+$uni-spacing-lg: 32rpx;
+
+/* form */
+// size
+	$form-font-size-primary: $uni-font-size-lg;
+	$form-font-size-secondary: $uni-font-size-base + 2rpx;
+	$form-input-height: 90rpx;
+	$form-btn-height: 96rpx;
+// color
+	$form-font-color-label: $uni-text-color-grey;
+	$form-font-color-placeholder: $uni-text-color-placeholder;
+	$form-font-color-primary: $uni-text-color;
+	$form-border-color-primary: $uni-border-color;
+
+/* custom tab */
+// color
+	$tab-border-color-secondary: $uni-border-color;
+	$tab-btn-color-primary: $ds-main-color;
+	$tab-font-color-primary: $uni-text-color;
+	$tab-font-color-current: $ds-main-color;
+// size
+	$tab-font-size-primary: $uni-font-size-lg;
+	$tab-btn-height: 100rpx;
+
+/* category */
+	// category-tab
+		// size
+		$category-tab-font-size-primary: $uni-font-size-base;
+		$category-tab-btn-height: 60rpx;
+		// color
+		$category-tab-btn-color-primary: $uni-color-secondry;
+		$category-tab-btn-color-current: $ds-main-color;
+		$category-tab-btn-font-color-primary: $uni-text-color-grey;
+	// category-manager
+		// size
+		$category-manager-btn-height: 60rpx;
+	// category-product
+		// size
+		$category-product-img-width: 140rpx;
+
+// searcher
+	// color
+	$searcher-bg-color-primary: $category-tab-btn-color-primary;
+	$searcher-font-color-placeholder: $uni-text-ordermsg;
+	// size
+	$searcher-height: 64rpx;
+	$searcher-font-size-primary: $uni-font-size-base;

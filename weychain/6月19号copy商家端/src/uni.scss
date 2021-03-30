@@ -1,0 +1,42 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixin.scss';
+@import '@/styles/grid.scss';
+@import '@/styles/base64-in-style.scss';
+
+page {
+	background-color: $uni-bg-color-othergrey;
+}
+
+/* 自定义css，rebase */
+view {
+	font-size: 27rpx;
+	line-height: inherit;
+}
+button[type='main'] {
+	color: #fff;
+	background-color: $uni-color-main;
+}
+button[type='main'].disclick {
+	opacity: 0.4;
+	pointer-events: none;
+}
+.uni-input {
+	font-size: $uni-font-size-lg;
+}
+.uni-input-placeholder {
+	color: $uni-text-color-placeholder;
+}
+.fixed-bottom {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+.fixed-top {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}

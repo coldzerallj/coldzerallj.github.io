@@ -1,0 +1,6 @@
+.eslintrc.js
+package.json
+/dist/
+/src/i18n/langs/
+node_modules/
+src/svg
